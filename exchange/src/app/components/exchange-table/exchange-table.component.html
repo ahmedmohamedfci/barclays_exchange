@@ -1,0 +1,22 @@
+<div class="wrap">
+	<table>
+		<thead>
+			<tr class="table-head">
+				<th class="column1" (click)="reverseSorted()">Currency 
+					<i class="up" *ngIf="sorted<0"></i>
+					<i class="down" *ngIf="sorted>0"></i>
+				</th>
+				<th class="column2">sell</th>
+				<th class="column3">buy</th>
+			</tr>
+		</thead>
+		<tbody>
+				<tr *ngFor="let rate of sortedValuesArray(rates)" [ngClass]="{'redBG':isInBase(rate[0])}">
+					<td class="column">{{rate[0]}}</td>
+					<td class="column">{{formatRate(rate[1],0.05)}}</td>
+					<td class="column">{{formatRate(rate[1],-0.05)}}</td>
+				</tr>
+									
+		</tbody>
+	</table>
+</div>

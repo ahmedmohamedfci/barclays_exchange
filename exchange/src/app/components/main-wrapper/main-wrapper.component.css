@@ -1,0 +1,19 @@
+.container {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+}
+.leftPanel {
+    width: 30%;
+    float: left;
+	margin-left:0%;
+}
+.keepOnLeft{
+	float:left;
+	width:100%;
+}
+.rightPanel{
+    margin-left: 40%;    
+	width:50%
+}

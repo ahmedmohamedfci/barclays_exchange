@@ -1,0 +1,19 @@
+
+<div class="container">
+{{currency}}-{{date}}
+	<div class="leftPanel">
+		<div class="keepOnLeft">
+			<app-drop-down></app-drop-down>
+		</div>
+		<div  class="keepOnLeft">
+			<app-date-selector></app-date-selector>
+		</div>
+		<div >
+			<app-display-button (clickEvent)="updateValues($event)"></app-display-button>
+		</div>
+	</div>
+	<div class="rightPanel">
+		<app-exchange-table></app-exchange-table>
+	</div>
+</div>
+
